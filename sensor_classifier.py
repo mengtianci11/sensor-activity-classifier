@@ -1,3 +1,9 @@
+"""
+传感器人体活动识别 - 主训练脚本
+功能：读取合并后的加速度数据，提取时域特征，训练随机森林分类器
+输入：sensor_data.csv（包含 time, acc_x, acc_y, acc_z, activity）
+输出：准确率及分类报告
+"""
 import pandas as pd
 import numpy as np
 from sklearn.model_selection import train_test_split
